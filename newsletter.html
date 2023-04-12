@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>News Letter Design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            #nara {
+                color: #0F3923;
+                font-family: "Last Ninja", Impact, fantasy;
+                font-size: 30px;
+                margin: 0px;
+            }
+
+            #sub {
+                margin: 20px 0px 0px 5px;
+                font-size: 14px;
+            }
+
+            #circle1 {
+                background-color: #588870;
+                border-radius: 25px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+            #circle2 {
+                background-color: #7CB69D;
+                border-radius: 25px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+
+            #circle3 {
+                background-color: #0F3923;
+                border-radius: 25px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+
+            .ponc1 {
+                position: absolute;
+                left: 11.1%;
+                text-align: center;
+            }
+
+            .ponc2 {
+                position: absolute;
+                left: 11.1%;
+                text-align: center;
+                color: white;
+            }
+
+            #sumt {
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: #0F3923 ;
+                border-width: 1px 0px 0px 0px;
+                margin-bottom: 1em;
+                margin-top: 1em;
+            }
+
+            .tit {
+                font-size: 18px;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            #newst {
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: #0F3923 ;
+                border-width: 1px 0px 0px 0px;
+            }
+
+            .trbord {
+                border-style: dotted;
+                border-color: #0F3923 ;
+                border-width: 1px 0px 0px 0px;
+            }
+
+            #footer {
+                background-color: #687169;
+                color: white;
+                padding: 0 20px;
+            }
+
+            footer a {
+                display: inline-block;
+                color: white; 
+                font-size: 14px;
+                margin: 1em;
+            }
+
+            footer a:visited {
+                color: white;
+            }
+
+            footer p span {
+                font-size: 14px;
+                margin-bottom: 1em;
+            }
+
+        </style>
+    </head>
+    <!--body-->
+    <body>
+        <!--전체 테이블-->
+        <table align="center" cellpadding="0" cellspacing="0" width="600px">
+            <!--주차-->
+            <tr>
+                <td>
+                    <p align="right" style="font-size:13px;">2022년 4월 1주차</p>
+                </td>
+            </tr>
+            <!--로고-->
+            <tr bgcolor="#0F3923">
+                <td align="center">
+                    <img src="img/logo.png" alt="Logo Image" width="300" style="display: block;" />
+                </td>
+            </tr>
+            <!--제목-->
+            <tr>
+                <td align="center" cellpadding="5" cellspacing="10">
+                    <p id="sub">세계 뉴스의 핵심을 한눈에! 주간 세계 뉴스레터</p>
+                    <p id="nara">Is This NARA?</p>
+                
+                </td>
+            </tr>
+            <!--요약-->
+            <tr>
+                <td>
+                    <table id="sumt" align="center" cellpadding="5" cellspacing="10" width="100%">
+                        <!--section title-->
+                        <tr>
+                            <td class="tit" colspan="3">
+                                &#128203; 금주의 세계 뉴스 요약
+                            </td>
+                        </tr>
+                        <!--circle-->
+                        <tr align="center" height="100px">
+                            <td width="30%">
+                                <div id="circle1"> <p class="ponc2">나라 1</p></div>
+                            </td>
+                            <td width="30%">
+                                <div id="circle2"> <p class="ponc1">나라 2</p></div>
+                            </td>
+                            <td width="30%">
+                                <div id="circle3"> <p class="ponc2">나라 3</p></div>
+                            </td>
+                        </tr>
+                        <!--나라 1-->
+                        <tr align="center">
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                        </tr>
+                        <!--나라 2-->
+                        <tr align="center">
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                        </tr>
+                        <!--나라 3-->
+                        <tr align="center">
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                            <td>
+                                {keyword}
+                            </td>
+                        </tr>
+                   </table>
+            </tr>
+            <tr>
+                <td>
+                    <table id="newst" align="center" cellpadding="5" cellspacing="5" width="100%">
+                        <!--section title-->
+                        <tr>
+                            <td class="tit">
+                                &#127758; 금주의 세계 뉴스
+                            </td>
+                        </tr>
+                        <!--나라별 뉴스-->
+                        <tr>
+                            <td>
+                                <table align="center" cellpadding="5" cellspacing="5" width="100%" style="border-collapse: collapse;">
+                                    <!--나라 1-->
+                                    <tr>
+                                        <td width="15%" rowspan="3"><div id="circle1"> <p class="ponc2">나라 1</p></div></td>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <!--나라 2-->
+                                    <tr class="trbord">
+                                        <td width="15%" rowspan="3"> <div id="circle2"> <p class="ponc1">나라 2</p></div></td>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <!--나라 3-->
+                                    <tr class="trbord">
+                                        <td width="15%" rowspan="3"><div id="circle3"> <p class="ponc2">나라 3</p></div></td>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">{title}</td>
+                                        <td>{text}</td>
+                                    </tr>
+                            </td>
+                        </tr>
+                   </table>
+                </td>
+            </tr>
+        </table>
+        <footer id="footer">
+            <nav>
+                <a href='https://www.notion.so/News-Summary-Project-09a5bb07a285454e91efee2b9849d51b?pvs=4' target='_blank'>Notion</a> |
+                <a href='https://github.com/kdt-service/AutoNewsFeeding_1' target='_blank'>Github</a>
+            </nav>
+            <p>
+                <span>Contact: isthisnara@naver.com</span><br/>
+                <span>Copyright &#169; 2023 Team_IsThisNARA. All rights reserved.</span>
+            </p>
+        </footer>
+    </body>
+</html>
+
+<!--bgcolor="#7CB69D"-->
+<!--bgcolor="#588870"-->
